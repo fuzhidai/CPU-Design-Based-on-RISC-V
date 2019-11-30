@@ -1,0 +1,42 @@
+# compile verilog/system verilog design source files
+verilog xil_demolib  \
+"../../../../project_demo.srcs/sources_1/imports/new/cla_test.v" \
+"../../../../project_demo.srcs/sources_1/new/cla_top.v" \
+"../../../../project_demo.srcs/sources_1/new/bit_slice.v" \
+"../../../../project_demo.srcs/sources_1/new/cla.v" \
+"../../../../project_demo.srcs/sources_1/new/cla_32.v" \
+"../../../../project_demo.srcs/sources_1/new/pg.v" \
+"../../../../project_demo.srcs/sources_1/new/sum.v" \
+"../../../../project_demo.srcs/sources_1/new/add_32.v" \
+"../../../../project_demo.srcs/sources_1/new/ie.v" \
+"../../../../project_demo.srcs/sources_1/new/alu.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_add32.v" \
+"../../../../project_demo.srcs/sources_1/new/n_bits.v" \
+"../../../../project_demo.srcs/sources_1/new/full_adder.v" \
+"../../../../project_demo.srcs/sources_1/new/cla_adder.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_alu.v" \
+"../../../../project_demo.srcs/sources_1/new/alu_ctr.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_alu_ctr.v" \
+"../../../../project_demo.srcs/sources_1/new/alu_top.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_top_alu.v" \
+"../../../../project_demo.srcs/sources_1/new/reg_file.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_reg_file.v" \
+"../../../../project_demo.srcs/sources_1/new/data_rom.v" \
+"../../../../project_demo.srcs/sources_1/new/mem_file.v" \
+"../../../../project_demo.srcs/sources_1/new/next_pc.v" \
+"../../../../project_demo.srcs/sources_1/new/pc.v" \
+"../../../../project_demo.srcs/sources_1/new/inst_mem.v" \
+
+verilog xil_defaultlib  \
+"../../../../project_demo.srcs/sim_1/new/test_r_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_i_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_u_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_ls_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_mem_file.v" \
+"../../../../project_demo.srcs/sim_1/new/test_next_pc.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

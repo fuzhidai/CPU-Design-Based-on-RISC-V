@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -38,6 +37,8 @@ read_verilog -library xil_demolib {
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/pg.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/sum.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/add_32.v
+  {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/pc_reg.v}
+  {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/regfile.v}
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/ie.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_add32.v
@@ -47,6 +48,15 @@ read_verilog -library xil_demolib {
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_ctr.v
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu_ctr.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_top.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_top_alu.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/reg_file.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_reg_file.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/data_rom.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/mem_file.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/next_pc.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/pc.v
+  D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/inst_mem.v
 }
 read_verilog -library xil_defaultlib {
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/RISCVtop.v}
@@ -58,8 +68,6 @@ read_verilog -library xil_defaultlib {
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/inst_rom.v}
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem.v}
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem_wb.v}
-  {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/pc_reg.v}
-  {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/regfile.v}
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/riscv.v}
   {C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/test.v}
   D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_32add.v

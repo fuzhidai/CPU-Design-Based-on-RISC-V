@@ -1,20 +1,7 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6ee22bdd2fea4a06943ea8c42f870d4e --incr --debug typical --relax --mt 2 -L xil_demolib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ls_ins_behav xil_defaultlib.test_ls_ins xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6ee22bdd2fea4a06943ea8c42f870d4e --incr --debug typical --relax --mt 2 -L xil_demolib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_next_pc_behav xil_defaultlib.test_next_pc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/ie.v" Line 1. Module ie doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_demolib.reg_file
-Compiling module xil_demolib.alu_ctr
-Compiling module xil_demolib.alu
-Compiling module xil_demolib.alu_top
-Compiling module xil_demolib.ie
-Compiling module xil_demolib.mem_file
-Compiling module xil_defaultlib.test_ls_ins
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot test_ls_ins_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -16,7 +16,11 @@ verilog xil_defaultlib  \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/id.v" \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/id_ex.v" \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/if_id.v" \
+
+verilog xil_demolib  \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/inst_rom.v" \
+
+verilog xil_defaultlib  \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem.v" \
 "C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem_wb.v" \
 
@@ -47,10 +51,18 @@ verilog xil_demolib  \
 "../../../../project_demo.srcs/sources_1/imports/new/test_top_alu.v" \
 "../../../../project_demo.srcs/sources_1/new/reg_file.v" \
 "../../../../project_demo.srcs/sources_1/imports/new/test_reg_file.v" \
+"../../../../project_demo.srcs/sources_1/new/data_rom.v" \
+"../../../../project_demo.srcs/sources_1/new/mem_file.v" \
+"../../../../project_demo.srcs/sources_1/new/next_pc.v" \
+"../../../../project_demo.srcs/sources_1/new/pc.v" \
 
 verilog xil_defaultlib  \
 "../../../../project_demo.srcs/sim_1/new/test_r_ins.v" \
 "../../../../project_demo.srcs/sim_1/new/test_i_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_u_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_ls_ins.v" \
+"../../../../project_demo.srcs/sim_1/new/test_mem_file.v" \
+"../../../../project_demo.srcs/sim_1/new/test_next_pc.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -17,6 +17,8 @@ WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Ver
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/pg.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/sum.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/add_32.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/pc_reg.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/regfile.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/ie.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_add32.v:]
@@ -26,36 +28,45 @@ WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Ver
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_ctr.v:]
 WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu_ctr.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_top.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_top_alu.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/reg_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_reg_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/data_rom.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/mem_file.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/next_pc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/pc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/inst_mem.v:]
 Command: synth_design -top test_alu_ctr -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 151904 
+INFO: Helper process launched with PID 3696 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 346.699 ; gain = 100.297
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 346.691 ; gain = 100.406
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'test_alu_ctr' [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu_ctr.v:23]
 INFO: [Synth 8-638] synthesizing module 'alu_ctr' [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_ctr.v:23]
 INFO: [Synth 8-256] done synthesizing module 'alu_ctr' (1#1) [D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu_ctr.v:23]
 INFO: [Synth 8-256] done synthesizing module 'test_alu_ctr' (2#1) [D:/vivado_project/project_demo/project_demo.srcs/sources_1/imports/new/test_alu_ctr.v:23]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 399.086 ; gain = 152.684
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 399.250 ; gain = 152.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 399.086 ; gain = 152.684
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 399.250 ; gain = 152.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 399.086 ; gain = 152.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 399.250 ; gain = 152.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 399.250 ; gain = 152.965
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 399.086 ; gain = 152.684
----------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -92,7 +103,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-115] binding instance 'alu_ctr0i_0' in module 'test_alu_ctr' to reference 'partition' which has no pins
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 535.660 ; gain = 289.258
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 535.211 ; gain = 288.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -105,7 +116,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 535.660 ; gain = 289.258
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 535.211 ; gain = 288.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -117,7 +128,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -141,7 +152,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -154,7 +165,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,25 +177,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -209,11 +220,11 @@ Report Instance Areas:
 |1     |top      |       |     0|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 544.336 ; gain = 297.934
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 543.887 ; gain = 297.602
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -221,10 +232,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-11 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+11 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:52 . Memory (MB): peak = 657.789 ; gain = 423.422
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 658.477 ; gain = 424.039
 INFO: [Common 17-1381] The checkpoint 'D:/vivado_project/project_demo/project_demo.runs/synth_1/test_alu_ctr.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file test_alu_ctr_utilization_synth.rpt -pb test_alu_ctr_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.490 . Memory (MB): peak = 657.789 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 09:39:37 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 658.477 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 20:40:43 2019...

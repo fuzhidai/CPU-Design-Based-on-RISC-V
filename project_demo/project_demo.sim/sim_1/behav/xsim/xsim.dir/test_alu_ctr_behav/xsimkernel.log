@@ -2,3 +2,6 @@ Running: xsim.dir/test_alu_ctr_behav/xsimk.exe -simmode gui -wdb test_alu_ctr_be
 Design successfully loaded
 Design Loading Memory Usage: 6852 KB (Peak: 6852 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7504 KB (Peak: 7504 KB)
+Simulation CPU Usage: 77 ms

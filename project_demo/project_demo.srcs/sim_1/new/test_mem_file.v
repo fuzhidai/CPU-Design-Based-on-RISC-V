@@ -8,7 +8,7 @@
 // Module Name: test_mem_file
 // Project Name: 
 // Target Devices: 
-// Tool Versions: 
+// Tool Versions: test_mem_file.v
 // Description: 
 // 
 // Dependencies: 
