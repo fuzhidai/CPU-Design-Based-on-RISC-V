@@ -1,4 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/ie.v" into library xil_demolib
-INFO: [VRFC 10-311] analyzing module ie
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu.v" into library xil_demolib
-INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sim_1/new/test_r_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_r_ins
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sim_1/new/test_i_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_i_ins
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sim_1/new/test_u_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_u_ins
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sim_1/new/test_ls_ins.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ls_ins
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sim_1/new/test_mem_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_mem_file
