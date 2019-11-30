@@ -1,6 +1,6 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6ee22bdd2fea4a06943ea8c42f870d4e --incr --debug typical --relax --mt 2 -L xil_demolib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_alu_behav xil_demolib.test_alu xil_demolib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6ee22bdd2fea4a06943ea8c42f870d4e --incr --debug typical --relax --mt 2 -L xil_demolib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_top_alu_behav xil_demolib.test_top_alu xil_demolib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,6 +10,7 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_demolib.alu_ctr
 Compiling module xil_demolib.alu
-Compiling module xil_demolib.test_alu
+Compiling module xil_demolib.alu_top
+Compiling module xil_demolib.test_top_alu
 Compiling module xil_demolib.glbl
-Built simulation snapshot test_alu_behav
+Built simulation snapshot test_top_alu_behav

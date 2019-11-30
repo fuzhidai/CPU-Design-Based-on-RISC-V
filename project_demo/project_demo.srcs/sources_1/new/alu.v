@@ -18,6 +18,7 @@ module alu(
     );
 
 reg [31:0] result;
+reg [31:0] regB_ii;
 
     
 always @ (*) begin
@@ -28,11 +29,14 @@ always @ (*) begin
             
             // 符号扩展
             if (sub_ctr_i) begin
-                {cout, result} <= regA_i + ~regB_i + sub_ctr_i;  
+                regB_ii <= ~regB_i;
             end       
             else begin
-                {cout, result} <= regA_i + regB_i + sub_ctr_i;
+                regB_ii <= regB_i;
             end
+            
+            {cout, result} <= regA_i + regB_ii + sub_ctr_i;  
+
                         
             if (op_ctr_i == 2'b00) begin
                 result_o <= result;
@@ -41,11 +45,11 @@ always @ (*) begin
             else if(op_ctr_i == 2'b11) begin
                 
                 if (sig_ctr_i) begin // 带符号整数比较小于置 1
-                    result_o <= {(of|sf), 31'b0}; // 零扩展
+                    result_o <= {31'b0, (of ^ sf)}; // 零扩展
                 end
                 
                 else begin
-                    result_o <= {(sub_ctr_i|cf), 31'b0};// 零扩展    
+                    result_o <= {31'b0, (sub_ctr_i ^ cf)};// 零扩展    
                 end                
             
             end
@@ -53,11 +57,11 @@ always @ (*) begin
         end 
         
         2'b01: begin    // or 选择“按位或”结果输出
-            result <= regA_i | regB_i;
+            result_o <= regA_i | regB_i;
         end
         
         2'b10: begin    // srcB 选择操作数 B 直接输出
-            result <= regB_i;
+            result_o <= regB_i;
         end
         
         // 2'b11: begin    // slt sltu 选择小于置位结果输出
@@ -70,7 +74,9 @@ end
 assign zf = (result_o == 32'b0 ? 1'b1 : 1'b0); // 零标志
 assign sf = result_o[31];   // 符号标志
 assign cf = (sub_ctr_i ? ~cout : cout); // 进位/错位标志
-assign of = ((result_o[31] ^ regA_i[31]) && (result_o[31] ^ regB_i[31]) ? 1'b1 : 1'b0 ); // 溢出标志
+
+// 当 X 和 Y' 的最高位相同且不同于结果 F 的最高位时发生溢出 of = 1 否则 of = 0
+assign of = ((regA_i[31] == regB_ii[31]) && (regA_i[31] != result_o[31]) ? 1'b1 : 1'b0 ); // 溢出标志
     
     
 endmodule
