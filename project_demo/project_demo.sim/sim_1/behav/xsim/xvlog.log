@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/ie.v" into library xil_demolib
+INFO: [VRFC 10-311] analyzing module ie
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_demo/project_demo.srcs/sources_1/new/alu.v" into library xil_demolib
+INFO: [VRFC 10-311] analyzing module alu

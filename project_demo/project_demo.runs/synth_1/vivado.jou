@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Nov 30 09:38:14 2019
+# Process ID: 146744
+# Current directory: D:/vivado_project/project_demo/project_demo.runs/synth_1
+# Command line: vivado.exe -log test_alu_ctr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_alu_ctr.tcl
+# Log file: D:/vivado_project/project_demo/project_demo.runs/synth_1/test_alu_ctr.vds
+# Journal file: D:/vivado_project/project_demo/project_demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_alu_ctr.tcl -notrace

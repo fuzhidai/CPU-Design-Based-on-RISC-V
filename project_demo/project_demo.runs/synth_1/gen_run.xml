@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1575077890">
+  <File Type="PA-TCL" Name="test_alu_ctr.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_alu_ctr_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="test_alu_ctr_reports.tcl"/>
+  <File Type="RDS-RDS" Name="test_alu_ctr.vds"/>
+  <File Type="RDS-UTIL" Name="test_alu_ctr_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_alu_ctr_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_alu_ctr.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_alu_ctr_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="test_alu_ctr_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/cla_test.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/cla_test.v"/>
+        <Attr Name="ImportTime" Val="1575004722"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cla_top.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bit_slice.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cla.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cla_32.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pg.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sum.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/add_32.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/RISCVtop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/ex.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/ex_mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/id.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/id_ex.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/if_id.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/inst_rom.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/mem_wb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/pc_reg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/riscv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/57690/Desktop/3条指令RISC-V处理器verilog源代码/7.2.4 3条指令RISC-V处理器/test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ie.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/test_32add.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/test_32add.v"/>
+        <Attr Name="ImportTime" Val="1574998486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/test_add32.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/test_add32.v"/>
+        <Attr Name="ImportTime" Val="1574998385"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/n_bits.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cla_adder.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/test_alu.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/test_alu.v"/>
+        <Attr Name="ImportTime" Val="1575074431"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu_ctr.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/test_alu_ctr.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_demolib"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/test_alu_ctr.v"/>
+        <Attr Name="ImportTime" Val="1575076644"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="test_alu_ctr"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

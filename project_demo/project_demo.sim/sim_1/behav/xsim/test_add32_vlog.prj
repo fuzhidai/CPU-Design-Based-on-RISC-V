@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_demolib  \
+"../../../../project_demo.srcs/sources_1/new/add_32.v" \
+"../../../../project_demo.srcs/sources_1/imports/new/test_add32.v" \
+
+# compile glbl module
+verilog xil_demolib "glbl.v"
+
+# Do not sort compile order
+nosort
