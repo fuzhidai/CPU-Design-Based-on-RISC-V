@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/id.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module id
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sim_1/new/test_id.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test_id

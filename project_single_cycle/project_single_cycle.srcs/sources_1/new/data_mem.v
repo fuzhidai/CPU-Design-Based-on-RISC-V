@@ -33,16 +33,14 @@ module data_mem(
 
 reg [31:0] mem_r [0:255];
 
-initial begin
-//mem_r[5'b00001] = 32'b0000_0000_0000_0000_0000_0000_0000_0001;
-//mem_r[5'b00010] = 32'b0000_0000_0000_0000_0000_0000_0000_1111;
-end
-
+// 初始化存储器数据 这里必须使用绝对路径，不然读不到值
+initial $readmemh ("D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/data_rom.data", mem_r);
 
 always @ (posedge clk or negedge rst_n) begin      //写入存储器
     if(rst_n) begin
         if((addr != 32'b0) && (mem_wr))
-            mem_r[addr] <= data_in;
+        // 每一条 32 位数据地址都要占用 4 个地址位，指令地址 都要为 4 的倍数，可以将指令地址左移两位来保证地址的正确性
+            mem_r[addr[9:2]] <= data_in;
     end
 end
 
@@ -50,7 +48,8 @@ always @ (*) begin                                 //存储器读出数据
     if(~rst_n || addr == 32'b0)
         data_out <= 32'b0;
     else
-        data_out <= mem_r[addr];
+        // 每一条 32 位数据地址都要占用 4 个地址位，指令地址 都要为 4 的倍数，可以将指令地址左移两位来保证地址的正确性
+        data_out <= mem_r[addr[9:2]];
 end
 
 endmodule

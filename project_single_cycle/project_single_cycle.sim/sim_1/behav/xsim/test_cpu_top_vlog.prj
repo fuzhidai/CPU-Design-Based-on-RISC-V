@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_single_cycle.srcs/sources_1/new/alu.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/alu_ctr.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/alu_top.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/data_mem.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/id.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/ie.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/inst_rom.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/mux_alu_asrc.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/mux_alu_bsrc.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/next_pc.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/pc_reg.v" \
+"../../../../project_single_cycle.srcs/sources_1/new/reg_file.v" \
+"../../../../project_single_cycle.srcs/sim_1/new/test_cpu_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

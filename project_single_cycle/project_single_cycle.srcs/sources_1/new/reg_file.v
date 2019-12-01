@@ -29,24 +29,25 @@ module reg_file(
     input              reg_wr,  // 写使能
 
     input [4:0]        ra,      // 读地址
-    input              re1,     // 流水线优化
+    //input              re1,     // 流水线优化
     output reg [31:0] bus_a,   // 读出数据
 
     input [4:0]        rb,      // 读地址
-    input              re2,     //流水线优化
+    //input              re2,     //流水线优化
     output reg [31:0] bus_b    // 读数据
 );
 
     reg [31:0] mem_r [0:31];
     
 initial begin
-    mem_r[5'b00001] = 32'b0000_0000_0000_0000_0000_0000_0000_0001;
-    mem_r[5'b00010] = 32'b0000_0000_0000_0000_0000_0000_0000_1111;
+    mem_r[5'b00001] = 32'b0000_0000_0000_0000_0000_0000_0000_0100;
+    //mem_r[5'b00010] = 32'b0000_0000_0000_0000_0000_0000_0000_0001;
 end
 
     
 always @ (posedge clk or negedge rst_n) begin      //写入寄存器
     if(rst_n) begin
+        // 此处设置为不可写入 00000 地址处
         if((rw != 5'b0) && (reg_wr))
             mem_r[rw] <= bus_w;
     end
@@ -55,14 +56,17 @@ end
 always @ (*) begin                                 //从端口1读出数据
     if(~rst_n)
         bus_a <= 32'b0;
+    
+    // 不可读 0 地址
     else if(ra == 5'b0)
         bus_a <= 32'b0;
 //    else if((ra == rw) && re1 && reg_wr)        //如果写入的地址与要读出的地址相同
 //        bus_a <= bus_w;                           //则直接将写入数据读出
-    else if(re1)
-        bus_a <= mem_r[ra];
+//    else if(re1)
+//        bus_a <= mem_r[ra];
     else
-        bus_a <= 32'b0;
+        bus_a <= mem_r[ra];
+//        bus_a <= 32'b0;
     end
 
 always @ (*) begin                                 //从端口2读出数据
@@ -72,10 +76,11 @@ always @ (*) begin                                 //从端口2读出数据
         bus_b <= 32'b0;
 //    else if((rb == rw) && re2 && reg_wr)
 //        bus_b <= bus_w;
-    else if(re2)
-        bus_b <= mem_r[rb];
+//    else if(re2)
+//        bus_b <= mem_r[rb];
     else
-        bus_b <= 32'b0;
+        bus_b <= mem_r[rb];
+//        bus_b <= 32'b0;
     end
 
 endmodule
