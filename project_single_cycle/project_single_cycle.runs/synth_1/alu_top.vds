@@ -1,0 +1,288 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec  1 10:30:38 2019
+# Process ID: 4672
+# Current directory: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1
+# Command line: vivado.exe -log alu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_top.tcl
+# Log file: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1/alu_top.vds
+# Journal file: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu_top.tcl -notrace
+Command: synth_design -top alu_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3532 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 346.020 ; gain = 99.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu_top' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu_ctr' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu_ctr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu_ctr' (1#1) [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu_ctr.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'alu_top' (3#1) [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu_top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 398.352 ; gain = 152.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 398.352 ; gain = 152.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 398.352 ; gain = 152.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "zf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "regB_ii" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [Synth 8-327] inferring latch for variable 'result_o_reg' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'cout_reg' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'regB_ii_reg' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/alu.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 398.352 ; gain = 152.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "alu0/zf" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[31]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[30]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[29]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[28]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[27]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[26]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[25]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[24]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[23]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[22]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[21]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[20]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[19]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[18]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[17]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[16]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[15]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[14]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[13]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[12]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[11]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[10]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[9]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[8]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[7]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[6]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[5]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[4]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[3]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[2]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[1]) is unused and will be removed from module alu_top.
+WARNING: [Synth 8-3332] Sequential element (alu0/result_o_reg[0]) is unused and will be removed from module alu_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     9|
+|3     |LUT2   |    35|
+|4     |LUT3   |     1|
+|5     |LUT4   |    38|
+|6     |LUT5   |     3|
+|7     |LUT6   |    53|
+|8     |LD     |    65|
+|9     |IBUF   |    68|
+|10    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   306|
+|2     |  alu0   |alu    |   180|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.730 ; gain = 321.438
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 65 instances were transformed.
+  LD => LDCE: 65 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 669.758 ; gain = 436.414
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1/alu_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_top_utilization_synth.rpt -pb alu_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 669.758 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 10:31:16 2019...

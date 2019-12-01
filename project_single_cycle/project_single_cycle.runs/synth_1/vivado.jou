@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Dec  1 10:30:38 2019
+# Process ID: 4672
+# Current directory: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1
+# Command line: vivado.exe -log alu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_top.tcl
+# Log file: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1/alu_top.vds
+# Journal file: D:/vivado_project/project_single_cycle/project_single_cycle.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu_top.tcl -notrace

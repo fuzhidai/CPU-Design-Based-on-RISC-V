@@ -1,17 +1,7 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d5bb435768d240a9b6e9ce3d6779f8f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_pc_behav xil_defaultlib.test_pc xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d5bb435768d240a9b6e9ce3d6779f8f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_j_inst_behav xil_defaultlib.test_j_inst xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/next_pc.v" Line 1. Module next_pc doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "D:/vivado_project/project_single_cycle/project_single_cycle.srcs/sources_1/new/inst_rom.v" Line 1. Module inst_rom doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.next_pc
-Compiling module xil_defaultlib.inst_rom
-Compiling module xil_defaultlib.pc_reg
-Compiling module xil_defaultlib.test_pc
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot test_pc_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
