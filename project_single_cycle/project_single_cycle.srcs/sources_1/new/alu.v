@@ -93,12 +93,12 @@ always @ (*) begin
     
 end
 
-assign zf = (result_o == 32'b0 ? 1'b1 : 1'b0); // 零标志
-assign sf = result_o[31];   // 符号标志
+assign zf = (result == 32'b0 ? 1'b1 : 1'b0); // 零标志
+assign sf = result[31];   // 符号标志
 assign cf = (sub_ctr_i ? ~cout : cout); // 进位/错位标志
 
 // 当 X 和 Y' 的最高位相同且不同于结果 F 的最高位时发生溢出 of = 1 否则 of = 0
-assign of = ((regA_i[31] == regB_ii[31]) && (regA_i[31] != result_o[31]) ? 1'b1 : 1'b0 ); // 溢出标志
+assign of = ((regA_i[31] == regB_ii[31]) && (regA_i[31] != result[31]) ? 1'b1 : 1'b0 ); // 溢出标志
     
     
 endmodule
