@@ -2,3 +2,6 @@ Running: xsim.dir/test_j_inst_behav/xsimk.exe -simmode gui -wdb test_j_inst_beha
 Design successfully loaded
 Design Loading Memory Usage: 6260 KB (Peak: 6260 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7060 KB (Peak: 7060 KB)
+Simulation CPU Usage: 124 ms

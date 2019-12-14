@@ -25,15 +25,21 @@ module pc_reg(
     input              rst_n,
     input [31:0]       next_pc,
 
-    output reg [31:0]  cur_pc
+    output reg [31:0]  cur_pc,
+    output reg         ce
     );
 
     always @ (posedge clk or negedge rst_n) begin
-        if(~rst_n) begin
-            cur_pc <= 32'b0;
-        end
-        else begin
-            cur_pc <= next_pc;
-        end
+        if(~rst_n)
+            ce <= 1'b0;
+        else
+            ce <= 1'b1;      
     end
+
+    always @ (posedge clk) begin
+        if(~ce)
+            cur_pc <= 32'b0;
+        else
+            cur_pc <= next_pc;
+    end    
 endmodule

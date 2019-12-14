@@ -35,7 +35,7 @@ module test_cpu_top;
     
     wire [31:0]      imm;
     wire             zero;
-    reg              ce;
+    wire             ce;
     
     wire [31:0]      bus_w;   
     wire [31:0]      bus_a;          
@@ -59,12 +59,10 @@ module test_cpu_top;
     wire [3:0] alu_ctr;    // ALU
     
     initial begin
-        ce = 0;
         clk = 0;
         rst_n = 0;
         
         #50
-        ce = 1'b1;
         rst_n = 1'b1;
         
     end
@@ -138,7 +136,8 @@ module test_cpu_top;
         .rst_n(rst_n),
         
         .next_pc(next_pc),
-        .cur_pc(cur_pc)
+        .cur_pc(cur_pc),
+        .ce(ce)
         );
     
     // mux from bus_b and imm and 4. send bus_bi to alu regB_i.

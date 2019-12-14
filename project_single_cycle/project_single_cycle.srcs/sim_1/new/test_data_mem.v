@@ -49,7 +49,7 @@ module test_data_mem;
     end
     always #20 clk = ~clk;
     
-    mem_file mem_file0(
+    data_mem data_mem0(
         .rst_n(rst_n),
         .clk(clk),
     
